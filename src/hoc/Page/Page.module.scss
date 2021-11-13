@@ -1,0 +1,14 @@
+.page {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 64px;
+	flex-grow: 1;
+	width: 100%;
+	background: rgba(#3264C8, .1);
+
+	&Wrapper {
+		width: 100%;
+		max-width: 768px;
+		padding: 0 20px;
+	}
+}

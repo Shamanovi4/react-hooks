@@ -1,0 +1,7 @@
+export const ALERT_SHOW = 'ALERT_SHOW'
+export const ALERT_HIDE = 'ALERT_HIDE'
+export const USERS_CLEAR = 'USERS_CLEAR'
+export const REPOSITORIES_GET = 'REPOSITORIES_GET'
+export const USER_GET = 'USER_GET'
+export const USERS_SEARCH = 'USERS_SEARCH'
+export const LOADING_SET = 'LOADING_SET'

@@ -1,0 +1,19 @@
+.alert {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	border-radius: 8px;
+	border: 1px solid #e6e6e6;
+	margin-top: 16px;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	min-height: 48px;
+	padding: 8px 16px;
+	background: #fff;
+
+	&Text {
+		margin-left: 20px;
+	}
+}

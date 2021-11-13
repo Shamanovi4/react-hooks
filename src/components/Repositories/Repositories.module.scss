@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.repositories {
+	&Item {
+		padding: 8px 16px;
+		background: rgba(#3264C8, 0.05);
+		border: 1px solid #e6e6e6;
+		border-radius: 4px;
+
+		&:hover {
+			box-shadow: 0 0 2px 1px rgba(#3264C8, .5);
+			border: 1px solid rgba(#3264C8, .5);
+		}
+
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+	}
+
+	&Link {
+		font-size: 14px;
+		font-weight: 500;
+		color: #3264C8;
+		text-decoration: none;
+	}
+}

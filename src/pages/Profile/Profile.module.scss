@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.profile {
+	&Content {
+		display: flex;
+
+		&Group {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			&:first-child {
+				width: 25%;
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&Avatar {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	&Name {
+		font-size: 24px;
+		font-weight: 500;
+		color: #3264C8;
+	}
+
+	&Bio {
+		margin-top: 8px;
+	}
+
+	&Info {
+		margin-top: 8px;
+
+		&Item {
+			&Tag {
+				font-weight: 500;
+			}
+		}
+	}
+
+	&Link {
+		color: #3264C8;
+
+		&:hover {
+			color: #4C77CF;
+		}
+	}
+
+	&Badges {
+		display: flex;
+		margin-top: 20px;
+
+		&Item {
+			margin-right: 8px;
+			padding: 4px 8px;
+			background: rgba(#3264C8, 0.05);
+			border: 1px solid #3264C8;
+			border-radius: 4px;
+			font-size: 12px;
+			font-weight: 500;
+			color: #000;
+		}
+	}
+
+	&Button {
+		width: 100%;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.loading {
+	font-size: 14px;
+	font-weight: 500;
+	color: #000;
+}
+
+.repositories {
+	display: flex;
+	flex-direction: column;
+}
