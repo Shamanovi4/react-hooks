@@ -1,7 +1,6 @@
 .cards {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-auto-rows: minmax(100px, auto);
+	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 20px;
 }
 
@@ -9,4 +8,23 @@
 	font-size: 14px;
 	font-weight: 500;
 	color: #000;
+}
+
+@media (max-width: 576px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 12px;
+  }
+}
+
+@media (max-width: 414px) {
+  .cards {
+    grid-column-gap: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

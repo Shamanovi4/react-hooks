@@ -1,28 +1,19 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 .profile {
 	&Content {
-		display: flex;
+		display: grid;
+    grid-template-columns: 36fr 64fr;
+    grid-column-gap: 20px;
 
 		&Group {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-
-			&:first-child {
-				width: 25%;
-				margin-right: 20px;
-			}
 		}
 	}
 
 	&Avatar {
 		width: 100%;
 		height: auto;
-		object-fit: cover;
 	}
 
 	&Name {
@@ -36,6 +27,7 @@
 	}
 
 	&Info {
+    list-style: none;
 		margin-top: 8px;
 
 		&Item {
@@ -55,30 +47,27 @@
 
 	&Badges {
 		display: flex;
-		margin-top: 20px;
+    flex-wrap: wrap;
+		margin-top: 12px;
 
 		&Item {
-			margin-right: 8px;
+      display: flex;
+      align-items: center;
+      height: 32px;
+			margin: 8px 8px 0 0;
 			padding: 4px 8px;
-			background: rgba(#3264C8, 0.05);
 			border: 1px solid #3264C8;
 			border-radius: 4px;
+			background: rgba(#3264C8, 0.05);
+			color: #000;
 			font-size: 12px;
 			font-weight: 500;
-			color: #000;
 		}
 	}
 
 	&Button {
+    margin-top: 20px;
 		width: 100%;
-	}
-
-	ul {
-		list-style: none;
-	}
-
-	a {
-		text-decoration: none;
 	}
 }
 
@@ -91,4 +80,88 @@
 .repositories {
 	display: flex;
 	flex-direction: column;
+}
+
+@media (max-width: 576px) {
+  .profile {
+    &Content {
+      grid-column-gap: 12px;
+    }
+
+    &Name {
+      font-size: 20px;
+    }
+  
+    &Bio {
+      font-size: 14px;
+    }
+
+    &Info {
+      &Item {
+        font-size: 14px;
+      }
+    }
+
+    &Button {
+      margin-top: 12px;
+    }
+
+    &Badges {
+      margin-top: 4px;
+
+      &Item {
+        height: 24px;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .profile {
+    &Content {
+      grid-template-columns: none;
+      grid-column-gap: 8px;
+    }
+
+    &Avatar {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    &Name {
+      font-size: 16px;
+    }
+  
+    &Bio {
+      font-size: 12px;
+    }
+
+    &Info {
+      &Item {
+        font-size: 12px;
+      }
+    }
+
+    &Button {
+      margin-top: 8px;
+    }
+
+    &Badges {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .profile {
+    &Content {
+      grid-template-columns: none;
+      grid-column-gap: 8px;
+    }
+
+    &Avatar {
+      width: 60%;
+    }
+  }
 }

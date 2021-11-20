@@ -34,9 +34,6 @@ export const Profile = ({match}) => {
 					<div className={classes.profileContent}>
 						<div className={classes.profileContentGroup}>
 							<img src={avatar_url} alt={name} className={classes.profileAvatar} />
-							<a className={classes.profileButton} href={html_url} target='_blank' rel='noreferrer'>
-								<Button type={'button--no-margin'}>Open profile</Button>
-							</a>
 						</div>
 						<div className={classes.profileContentGroup}>
 							<h1 className={classes.profileName}>{name}</h1>
@@ -59,6 +56,9 @@ export const Profile = ({match}) => {
 									<a className={classes.profileLink} href={blog} target='_blank' rel='noreferrer'>{blog}</a>
 								</li>}
 							</ul>
+              <a className={classes.profileButton} href={html_url} target='_blank' rel='noreferrer'>
+								<Button type={'button--no-margin'}>Open profile</Button>
+							</a>
 						</div>
 					</div>
 					<ul className={classes.profileBadges}>

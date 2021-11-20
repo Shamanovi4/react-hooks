@@ -1,20 +1,18 @@
 .button {
+	position: relative;
   display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	position: relative;
-	height: 36px;
+	height: 32px;
 	margin: 8px;
   padding: 0 24px;
   border-radius: 4px;
 	border: 0;
-  color: #fff;
 	background: #3264C8;
+  color: #fff;
   font-size: 14px;
 	font-weight: 500;
 	font-family: 'Roboto', sans-serif;
-	outline: none;
-	text-decoration: none;
 
   &:hover {
     background: #4C77CF;
@@ -28,7 +26,14 @@
   }
 
 	&--no-margin {
-		margin: 20px 0 0 0;
-		width: 100%;
+    margin: 0;
 	}
+}
+
+@media (max-width: 414px) {
+  .button {
+    height: 24px;
+    padding: 0 16px;
+    font-size: 12px;
+  }
 }

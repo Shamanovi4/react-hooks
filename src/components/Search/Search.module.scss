@@ -3,18 +3,15 @@
 
 	&Input {
 		width: 100%;
-		margin: 0;
-		outline: none;
-		border: 0;
-		font-size: 14px;
-		font-family: 'Roboto', sans-serif;
-		color: #000;
-		min-height: 48px;
+		height: 48px;
 		padding: 8px 16px;
-		background: #fafafa;
 		border: 1px solid #fff;
 		border-bottom: 1px solid #3264C8;
-	
+		background: #fafafa;
+		color: #000;
+		font-size: 14px;
+		font-family: 'Roboto', sans-serif;
+    
 		&:hover {
 			box-shadow: 0 0 2px 1px rgba(#3264C8, .5);
 			border: 1px solid rgba(#3264C8, .5);
@@ -31,20 +28,17 @@
 	}
 
 	&Button {
+		position: relative;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		position: relative;
 		height: 48px;
 		padding: 0 24px;
-		border: 0;
-		color: #fff;
 		background: #3264C8;
+		color: #fff;
 		font-size: 14px;
 		font-weight: 500;
 		font-family: 'Roboto', sans-serif;
-		outline: none;
-		text-decoration: none;
 	
 		&:hover {
 			background: #4C77CF;
@@ -59,4 +53,19 @@
 			box-shadow: 0 0 2px 1px rgba(#3264C8, .5);
 		}
 	}	
+}
+
+@media (max-width: 414px) {
+  .search {
+    &Input {
+      height: 36px;
+      font-size: 12px;
+    }
+
+    &Button {
+      height: 36px;
+		  padding: 0 16px;
+      font-size: 12px;
+    }
+  }
 }

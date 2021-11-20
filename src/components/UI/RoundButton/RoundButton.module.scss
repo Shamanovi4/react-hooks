@@ -1,26 +1,17 @@
 .roundButton {
-	display: flex;
 	position: relative;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 4px;
 	padding: 8px;
 	border-radius: 50%;
 	border: 0;
-	background: transparent;
 	font-size: 24px;
 	color: #646464;
 
 	&.validationError {
 		color: #fa9600;
-
-		&:hover {
-			background: transparent;
-		}
-	
-		&:active {
-			background: transparent;
-		}
 	}
 
 	&:hover {
@@ -53,4 +44,10 @@
 	&:hover .tooltip {
 		opacity: 1;
 	}
+}
+
+@media (max-width: 414px) {
+  .roundButton {
+    font-size: 16px;
+  }
 }
