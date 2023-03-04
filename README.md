@@ -1,5 +1,5 @@
 # React Hooks
-Simple React app for searching and fetching data from github, e.g., profiles, repositories and other. Written with modern React Hooks with the use of HTML, SCSS, JS, React, React Redux, React Router, Axios.
+Simple React app for searching and fetching data from github, e.g., profiles, repositories and other. Written with React, React Redux, React Router, Axios.
 
 # Features
 - Searching through github profiles.
